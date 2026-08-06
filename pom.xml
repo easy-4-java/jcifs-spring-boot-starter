@@ -432,6 +432,7 @@
         <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
         <maven-nexus-staging-plugin.version>1.6.8</maven-nexus-staging-plugin.version>
         <metrics.version>4.0.2</metrics.version>
+                <jcifs-pool.version>1.0.x.20260630-SNAPSHOT</jcifs-pool.version>
     </properties>
     
     <dependencyManagement>
@@ -492,7 +493,12 @@
                 <version>${metrics.version}</version>
             </dependency>
 
-        </dependencies>
+                <dependency>
+            <groupId>io.github.hiwepy</groupId>
+            <artifactId>jcifs-pool</artifactId>
+            <version>${jcifs-pool.version}</version>
+        </dependency>
+</dependencies>
     </dependencyManagement>
 
     <dependencies>
@@ -560,7 +566,7 @@
         <dependency>
             <groupId>io.github.hiwepy</groupId>
             <artifactId>jcifs-pool</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${jcifs-pool.version}</version>
         </dependency>
         <!-- For Dropwizard Metrics -->
         <dependency>
