@@ -6,14 +6,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.12</version>
+        <version>3.1.12</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
     
     <groupId>io.github.easy4j</groupId>
     <artifactId>jcifs-spring-boot-starter</artifactId>
     <description>Spring Boot Starter For Jcifs</description>
-    <version>3.2.x.20260527-SNAPSHOT</version>
+    <version>3.1.x.20260527-SNAPSHOT</version>
     <name>${project.groupId}:${project.artifactId}</name>
     <url>https://github.com/easy-4-java/${project.artifactId}</url>
     <packaging>jar</packaging>
@@ -432,6 +432,10 @@
         <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
         <maven-nexus-staging-plugin.version>1.6.8</maven-nexus-staging-plugin.version>
         <metrics.version>4.0.2</metrics.version>
+                <commons-io.version>2.22.0</commons-io.version>
+                <dropwizard-metrics.version>4.2.39</dropwizard-metrics.version>
+                <jcifs-pool.version>2.0.x.20260630-SNAPSHOT</jcifs-pool.version>
+                <slf4j.version>2.0.18</slf4j.version>
     </properties>
     
     <dependencyManagement>
@@ -492,7 +496,23 @@
                 <version>${metrics.version}</version>
             </dependency>
 
-        </dependencies>
+                <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.github.easy4j</groupId>
+            <artifactId>jcifs-pool</artifactId>
+            <version>${jcifs-pool.version}</version>
+        </dependency>
+</dependencies>
     </dependencyManagement>
 
     <dependencies>
@@ -509,13 +529,13 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>2.0.13</version>
+            <version>${slf4j.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>2.0.13</version>
+            <version>${slf4j.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -562,13 +582,13 @@
         <dependency>
             <groupId>io.github.easy4j</groupId>
             <artifactId>jcifs-pool</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${jcifs-pool.version}</version>
         </dependency>
         <!-- For Dropwizard Metrics -->
         <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
-            <version>4.2.30</version>
+            <version>${dropwizard-metrics.version}</version>
         </dependency>
 
             <!-- For JUnit -->
@@ -581,7 +601,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.11.0</version>
+            <version>${commons-io.version}</version>
             <scope>test</scope>
         </dependency>
             <!-- For JUnit Jupiter -->
