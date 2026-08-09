@@ -13,6 +13,7 @@ import jcifs.smb.SmbFile;
 @Configuration
 @ConditionalOnClass({ SmbFile.class })
 @EnableConfigurationProperties({SmbProperties.class })
+/**\n * Auto-configuration for SmbAutoConfiguration.\n *\n * @author [@Loong Wan](https://github.com/loong10k)\n * @since 1.0.0\n */
 public class SmbAutoConfiguration {
 
 	@Bean
