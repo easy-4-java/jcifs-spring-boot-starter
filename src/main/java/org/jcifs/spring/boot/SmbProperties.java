@@ -23,7 +23,7 @@ import jcifs.smb.SmbFile2Config;
 
 /**
  * Samba客户端的配置
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @ConfigurationProperties(SmbProperties.PREFIX)
 public class SmbProperties extends SmbFile2Config {
