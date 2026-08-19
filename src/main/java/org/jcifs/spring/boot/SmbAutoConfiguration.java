@@ -15,6 +15,11 @@ import jcifs.smb.SmbFile;
 @EnableConfigurationProperties({SmbProperties.class })
 /**\n * Auto-configuration for SmbAutoConfiguration.\n *\n * @author <a href="https://github.com/loong10k">Loong Wan</a>\n * @since 1.0.0\n */
 public class SmbAutoConfiguration {
+	/**
+	 * <p>Base context.</p>
+	 * @return the base context
+	 * @throws CIFSException if an error occurs
+	 */
 
 	@Bean
 	public BaseContext baseContext() throws CIFSException {
