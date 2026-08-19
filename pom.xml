@@ -16,6 +16,7 @@
     <version>4.1.x.20260630-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>${project.groupId}:${project.artifactId}</name>
+            <url>https://github.com/loong10k</url>
     <description>Spring Boot Starter For Jcifs</description>
     <url>https://github.com/easy-4-java/${project.artifactId}</url>
 
@@ -53,7 +54,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.version>3.0</maven.version>
+        <maven.version>3.6.3</maven.version>
         <!-- Third-Party Dependencies -->
         <commons-beanutils.version>1.9.3</commons-beanutils.version>
         <commons-io.version>2.6</commons-io.version>
