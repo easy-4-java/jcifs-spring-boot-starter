@@ -494,7 +494,7 @@
             </dependency>
 
                 <dependency>
-            <groupId>io.github.hiwepy</groupId>
+            <groupId>io.github.easy4j</groupId>
             <artifactId>jcifs-pool</artifactId>
             <version>${jcifs-pool.version}</version>
         </dependency>
@@ -564,7 +564,7 @@
         </dependency>
         <!-- Source: https://github.com/easy-4-java/jcifs-pool — easy4j jcifs-pool -->
         <dependency>
-            <groupId>io.github.hiwepy</groupId>
+            <groupId>io.github.easy4j</groupId>
             <artifactId>jcifs-pool</artifactId>
             <version>${jcifs-pool.version}</version>
         </dependency>
